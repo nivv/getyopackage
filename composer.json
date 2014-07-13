@@ -4,8 +4,12 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+		"mattbrown/laracurl": "dev-master"
 	},
+	"required-dev":{
+		"way/generators": "2.*"
+		},
 	"autoload": {
 		"classmap": [
 			"app/commands",
@@ -30,7 +34,10 @@
 		]
 	},
 	"config": {
-		"preferred-install": "dist"
+		"preferred-install": "dist",
+		"github-oauth": {
+			"github.com": "90b39831f76e003f5ed1b720f3c664c7bedbb392"
+		}
 	},
 	"minimum-stability": "stable"
 }
